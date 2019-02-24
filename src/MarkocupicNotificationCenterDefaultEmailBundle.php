@@ -7,7 +7,7 @@
  * @author Marko Cupic m.cupic@gmx.ch, 2019
  * @link https://github.com/markocupic/notification-center-default-email-bundle
  */
-
+ 
 
 namespace Markocupic\NotificationCenterDefaultEmailBundle;
 
