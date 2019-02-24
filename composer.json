@@ -1,0 +1,30 @@
+{
+  "name": "markocupic/notification-center-default-email-bundle",
+  "type": "contao-bundle",
+  "description": "Contao 4 Notification Center default email plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marko Cupic",
+      "homepage": "https://github.com/markocupic"
+    }
+  ],
+  "require": {
+    "contao/core-bundle": "^4.6",
+    "terminal42/notification_center": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Markocupic\\NotificationCenterDefaultEmailBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config"
+    ]
+  },
+  "extra": {
+    "contao-manager-plugin": "Markocupic\\NotificationCenterDefaultEmailBundle\\ContaoManager\\Plugin"
+  }
+}
