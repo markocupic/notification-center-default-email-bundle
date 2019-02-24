@@ -1,18 +1,19 @@
 <?php
+
 /**
- * Created by PhpStorm.
- * User: Marko
- * Date: 24.02.2019
- * Time: 18:02
+ * Notification Center Default Email Web Plugin for Contao
+ * Copyright (c) 2008-2019 Marko Cupic
+ * @package notification-center-default-email-bundle
+ * @author Marko Cupic m.cupic@gmx.ch, 2019
+ * @link https://github.com/markocupic/notification-center-default-email-bundle
  */
 
-
+// HOOK
 $GLOBALS['TL_HOOKS']['initializeSystem'][] = array('Markocupic\NotificationCenterDefaultEmailBundle\Contao\Classes\InitializeSystem', 'initializeSystem');
 
 
-
-// notification_center_config.php
-$GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['default_email'] = array
+// notification_center
+$GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['defaultemail'] = array
 (
     // Type
     'default_email' => array

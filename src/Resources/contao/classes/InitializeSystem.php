@@ -1,11 +1,11 @@
 <?php
 
 /**
- * SAC Event Tool Web Plugin for Contao
+ * Notification Center Default Email Web Plugin for Contao
  * Copyright (c) 2008-2019 Marko Cupic
- * @package sac-event-tool-bundle
- * @author Marko Cupic m.cupic@gmx.ch, 2017-2019
- * @link https://github.com/markocupic/sac-event-tool-bundle
+ * @package notification-center-default-email-bundle
+ * @author Marko Cupic m.cupic@gmx.ch, 2019
+ * @link https://github.com/markocupic/notification-center-default-email-bundle
  */
 
 namespace Markocupic\NotificationCenterDefaultEmailBundle\Contao\Classes;
@@ -15,10 +15,9 @@ use Contao\Database;
 use NotificationCenter\Model\Notification;
 
 
-
 /**
  * Class InitializeSystem
- * @package Markocupic\SacEventToolBundle\ContaoHooks
+ * @package Markocupic\NotificationCenterDefaultEmailBundle\Contao\Classes
  */
 class InitializeSystem
 {
@@ -38,6 +37,7 @@ class InitializeSystem
                 'tstamp' => time()
             );
             $oInsertStmt = Database::getInstance()->prepare('INSERT into tl_nc_notification %s')->set($set)->execute();
+
             $set = array(
                 'pid'            => $oInsertStmt->insertId,
                 'tstamp'         => time(),

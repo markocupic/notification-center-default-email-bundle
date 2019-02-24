@@ -1,12 +1,13 @@
 <?php
+
 /**
- * @copyright  Marko Cupic 2017 <m.cupic@gmx.ch>
- * @author     Marko Cupic
- * @package    Contao Article Class Select Bundle
- * @license    LGPL-3.0+
- * @see	       https://github.com/markocupic/contao-article-class-select-bundle
- *
+ * Notification Center Default Email Web Plugin for Contao
+ * Copyright (c) 2008-2019 Marko Cupic
+ * @package notification-center-default-email-bundle
+ * @author Marko Cupic m.cupic@gmx.ch, 2019
+ * @link https://github.com/markocupic/notification-center-default-email-bundle
  */
+
 namespace Markocupic\NotificationCenterDefaultEmailBundle\ContaoManager;
 
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;

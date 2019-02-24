@@ -1,11 +1,11 @@
 <?php
 
 /**
- * SAC Event Tool Web Plugin for Contao
+ * Notification Center Default Email Web Plugin for Contao
  * Copyright (c) 2008-2019 Marko Cupic
- * @package sac-event-tool-bundle
- * @author Marko Cupic m.cupic@gmx.ch, 2017-2019
- * @link https://github.com/markocupic/sac-event-tool-bundle
+ * @package notification-center-default-email-bundle
+ * @author Marko Cupic m.cupic@gmx.ch, 2019
+ * @link https://github.com/markocupic/notification-center-default-email-bundle
  */
 
 
@@ -14,7 +14,7 @@ namespace Markocupic\NotificationCenterDefaultEmailBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Configures the sac event tool bundle.
+ * Configures the notification-center-default-email-bundle.
  *
  * @author Marko Cupic <https://github.com/markocupic>
  */
