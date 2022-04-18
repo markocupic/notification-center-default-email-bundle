@@ -12,6 +12,7 @@ namespace Markocupic\NotificationCenterDefaultEmailBundle\Contao\Classes;
 
 
 use Contao\Database;
+use Contao\System;
 use NotificationCenter\Model\Notification;
 
 
@@ -27,6 +28,9 @@ class InitializeSystem
      */
     public function initializeSystem()
     {
+        $framework = System::getContainer()->get('contao.framework');
+        $framework->initialize();
+
         if (Database::getInstance()->tableExists('tl_nc_notification'))
         {
             // Create default notification
