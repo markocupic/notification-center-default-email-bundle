@@ -18,7 +18,7 @@ use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception;
 
-#[AsHook(static::HOOK, priority: 100)]
+#[AsHook(self::HOOK, priority: 100)]
 class InitializeSystemListener
 {
     private const HOOK = 'initializeSystem';
@@ -39,7 +39,7 @@ class InitializeSystemListener
             // Create the default notification if not exists
             $result = $this->connection->fetchOne('SELECT id FROM tl_nc_notification WHERE type = ?', ['default_email']);
 
-            if (false !== $result) {
+            if (false === $result) {
                 $set1 = [
                     'type' => 'default_email',
                     'title' => 'Standard E-Mail (nur mit Platzhaltern)',
@@ -75,7 +75,7 @@ class InitializeSystemListener
                     'email_recipient_bcc' => '##recipient_bcc##',
                     'email_replyTo' => '##reply_to##',
                     'email_subject' => '##email_subject##',
-                    'email_mode' => 'extOnly',
+                    'email_mode' => 'textOnly',
                     'email_text' => '##email_text##',
                 ];
 

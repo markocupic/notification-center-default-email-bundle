@@ -16,9 +16,6 @@ namespace Markocupic\NotificationCenterDefaultEmailBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-/**
- * Configures the notification-center-default-email-bundle.
- */
 class MarkocupicNotificationCenterDefaultEmailBundle extends Bundle
 {
     public function getPath(): string

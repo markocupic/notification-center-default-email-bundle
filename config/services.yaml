@@ -3,8 +3,7 @@ services:
         autowire: true
         autoconfigure: true
         public: false
-        #bind:
 
-    Markocupic\NotificationCenterEmailBundle\:
+    Markocupic\NotificationCenterDefaultEmailBundle\:
         resource: ../src/
-        exclude: ../src/{ContaoManager,DependencyInjection,Resources}
+        exclude: ../src/{ContaoManager,DependencyInjection}
